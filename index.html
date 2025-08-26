@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-  </head>
-    <title>Tailwind frist steps</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> para la versión 3-->
+    <link rel="stylesheet" href="style.css">
 </head>
+<title>Tailwind frist steps</title>
+</head>
+
 <body>
     <header class="bg-blue-500 text-white dark:bg-blue-900 dark:text-gray-200">
-        <nav class="container mx-auto flex items-center justify-between py-4">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-4 md:px-8 lg:px-16">
             <a href="#" class="text-lg font-bold">Logo</a>
             <ul class="flex space-x-4">
                 <li class="hover:text-gray-200">
@@ -26,5 +28,34 @@
             </ul>
         </nav>
     </header>
+
+    <section class="bg-gray-100 py-12 px-4 md:px-8 lg:px-16">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-4">Título impactante</h2>
+                <p class="text-gray-600 mb-6">Subtexto explicativo que refuerza el mensaje principal. Subtexto explicativo que refuerza el mensaje principal</p>
+                <button
+                    class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg transition">
+                    Acción principal
+                </button>
+                <button class="bg-blue-600 hover:bg-blue-800 text-white px-6 py-3 rounded-lg transition">Tailwind</button>
+            </div>
+            <div class="md:w-1/2">
+                <img src="imgs/foto_hero.png" alt="Imagen representativa" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center gap-x-4">
+            <div class="shrink-0">
+            <img class="size-12" src="/img/logo.svg" alt="ChitChat Logo">
+        </div>
+        <div>
+            <div class="text-xl font-medium text-black">ChitChat</div>
+            <p class="text-slate-500">You have a new message!</p>
+        </div>
+    </div>
+
 </body>
+
 </html>
