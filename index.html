@@ -34,46 +34,49 @@
           <p class="py-4 md:text-2xl">Únete al webinar de Skill on y aprender a convertir el conocimiento de tu empresa en un archivo estratégico: organiza y respáldalo prar optimizar procesos, formar a tu equipo y capitalizar tu saber, con o sin IA</p>
           <p class="pb-2 md:text-2xl md:pb-4">El evento se llevará a cabo el día 15 de Mayo del 2025 a las 17h00 (GMT-5 Quito, Bogotá)</p>
           <p class="md:text-2xl">¡Reserva tu lugar y transforma tu forma de aprender y crecer!</p>
-          <div class="mt-8 max-w-md md:max-w-full">
+          <form  method="POST" class="mt-8 max-w-md md:max-w-full">
             <div class="grid grid-cols-1 gap-6">
 
               <label class="block md:w-full">
                 <span class="text-gray-700 md:text-2xl">Nombre</span>
-                <input type="text" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="Ingresa tu nombre" data-np-intersection-state="visible">
+                <input type="text" name="nombre" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="Ingresa tu nombre" data-np-intersection-state="visible">
               </label>
               
               <label class="block">
                 <span class="text-gray-700 md:text-2xl">Cargo</span>
-                <input type="text" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="Ingresa tu cargo" data-np-intersection-state="visible">
+                <input type="text" name="cargo" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="Ingresa tu cargo" data-np-intersection-state="visible">
               </label>
 
               <label class="block">
                 <span class="text-gray-700 md:text-2xl">Empresa a la que perteneces</span>
-                <input type="text" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="Ingresa el nombre de la empresa" data-np-intersection-state="visible">
+                <input type="text" name="empresa" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="Ingresa el nombre de la empresa" data-np-intersection-state="visible">
               </label>
 
               <label class="block">
                 <span class="text-gray-700 md:text-2xl">E-mail trabajo</span>
-                <input type="email" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="john@example.com" data-np-intersection-state="visible">
+                <input type="email" name="email" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="john@example.com" data-np-intersection-state="visible">
               </label>
 
               <label class="block">
                 <span class="text-gray-700 md:text-2xl">Teléfono</span>
-                <input type="tel" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="0987654321" data-np-intersection-state="visible">
+                <input type="tel" name="telefono" class="mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-brand-secondary focus:bg-white focus:ring-1 md:text-2xl" placeholder="0987654321" data-np-intersection-state="visible">
               </label>
               
               <div class="block">
                 <div class="mt-2">
                   <div>
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500 md:text-2xl md:w-6 md:h-6">
+                      <input type="checkbox" name="offers" class="rounded bg-gray-200 border-transparent focus:border-transparent focus:bg-gray-200 text-gray-700 focus:ring-1 focus:ring-offset-2 focus:ring-gray-500 md:text-2xl md:w-6 md:h-6">
                       <span class="ml-2 md:text-2xl">Email me news and special offers</span>
                     </label>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="w-full flex justify-center mt-4">
+              <button type="submit" class="bg-brand-primary hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">Enviar</button>
+            </div>
+          </form>
         </div>
     </div>
 
